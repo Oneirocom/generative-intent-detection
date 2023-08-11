@@ -114,6 +114,7 @@ export type Intent =
   | 'Strategy for Risk Management'
   | 'Promotion of an Accountability Culture'
   | 'Design of User Experiences'
+  | 'Strategy for Cybersecurity'
   | 'Other';
 
 export type IdentificationMethod =
@@ -150,6 +151,7 @@ export type IdentificationMethod =
   | 'Announcements of Reshoring'
   | 'Announcements of Spin-Offs'
   | 'Launches of New Products'
+  | 'Implementation of Cybersecurity Measures'
   | 'Other';
 
 export interface intentItem {
