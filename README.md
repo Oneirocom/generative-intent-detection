@@ -25,3 +25,7 @@ sequenceDiagram
     User->>Parsing: Initiate Parsing Process
     Parsing-->>User: Returns Result (requires no extra data)
 ```
+
+## See also older scripts in git history
+
+Older xstate machine and scripts are in git history.
