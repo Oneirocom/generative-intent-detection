@@ -2,7 +2,7 @@
     "id": "1f3a1d2a-215a-4d2a-811b-dfa5af8c1ddf",
     "name": "Generative Intent Detection",
     "projectId": "cll5ewwxf0003if081wjpwbno",
-    "hash": "42a74663dddcb87622a66e52aca3b67e",
+    "hash": "7f5fcbbec6e823874e7826b6326bdc84",
     "createdAt": "1691702711078",
     "updatedAt": "1692031117240",
     "creatorId": null,
@@ -652,7 +652,7 @@
             "502": {
                 "id": 502,
                 "data": {
-                    "fewshot": "Complete the report integrating the detected intents.",
+                    "fewshot": "Complete the report without repeating the detected intents.",
                     "isPublic": true,
                     "name": "Prompt"
                 },
