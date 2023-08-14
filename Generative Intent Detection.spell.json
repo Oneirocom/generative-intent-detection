@@ -1,10 +1,10 @@
 {
     "id": "1f3a1d2a-215a-4d2a-811b-dfa5af8c1ddf",
-    "name": "Generate Intent Detection",
+    "name": "Generative Intent Detection",
     "projectId": "cll5ewwxf0003if081wjpwbno",
-    "hash": "f66a2f024dde3bf9cbc4c506aa97d2b4",
+    "hash": "42a74663dddcb87622a66e52aca3b67e",
     "createdAt": "1691702711078",
-    "updatedAt": "1691789300085",
+    "updatedAt": "1692031117240",
     "creatorId": null,
     "graph": {
         "id": "demo@0.1.0",
@@ -71,8 +71,8 @@
                     }
                 },
                 "position": [
-                    -576,
-                    -16
+                    -736,
+                    -192
                 ],
                 "name": "Input"
             },
@@ -95,7 +95,7 @@
                     "trigger": {
                         "connections": [
                             {
-                                "node": 498,
+                                "node": 500,
                                 "output": "trigger",
                                 "data": {
                                     "hello": "hello"
@@ -106,8 +106,8 @@
                     "input": {
                         "connections": [
                             {
-                                "node": 498,
-                                "output": "output",
+                                "node": 500,
+                                "output": "result",
                                 "data": {
                                     "hello": "hello"
                                 }
@@ -127,7 +127,7 @@
                     }
                 },
                 "position": [
-                    592,
+                    1568,
                     -32
                 ],
                 "name": "Output"
@@ -182,6 +182,13 @@
                             {
                                 "node": 495,
                                 "input": "input",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            },
+                            {
+                                "node": 499,
+                                "input": "Input",
                                 "data": {
                                     "hello": "hello"
                                 }
@@ -315,7 +322,7 @@
                 "id": 496,
                 "data": {
                     "name": "schema",
-                    "fewshot": "export type Intent =\n  | 'Growth of the Business'\n  | 'Expansion into New Markets'\n  | 'Expansion of the Team'\n  | 'Launch of a New Product'\n  | 'Formation of Strategic Partnerships'\n  | 'Innovation in the Business'\n  | 'Expansion on a Global Scale'\n  | 'Collaborations with Other Businesses'\n  | 'Investment in Research and Development'\n  | 'Implementation of Corporate Social Responsibility Initiatives'\n  | 'Public Offering of Shares'\n  | 'Mergers and Acquisitions of Companies'\n  | 'Rebranding of the Business'\n  | 'Adoption of Sustainability Practices'\n  | 'Restructuring of the Business'\n  | 'Filing for Bankruptcy'\n  | 'Liquidation of Assets'\n  | 'Formation of Joint Ventures'\n  | 'Franchising Opportunities'\n  | 'Outsourcing of Tasks'\n  | 'Insourcing of Tasks'\n  | 'Offshoring of Operations'\n  | 'Reshoring of Operations'\n  | 'Creation of Spin-offs'\n  | 'Diversification of the Business'\n  | 'Divestment from Certain Areas'\n  | 'Dealing with Legal Issues'\n  | 'Compliance with Regulatory Requirements'\n  | 'Engagement with Customers'\n  | 'Protection of Data Privacy'\n  | 'Assurance of Quality'\n  | 'Optimization of the Supply Chain'\n  | 'Improvement of Operational Efficiency'\n  | 'Reduction of Costs'\n  | 'Generation of Revenue'\n  | 'Increase in Market Share'\n  | 'Raising Brand Awareness'\n  | 'Promotion of Employee Wellbeing'\n  | 'Governance of the Corporation'\n  | 'Management of Risks'\n  | 'Development towards Sustainability'\n  | 'Retention of Customers'\n  | 'Delivery of Services'\n  | 'Transformation through Digital Means'\n  | 'Adoption of Technology'\n  | 'Use of Agile Methodologies'\n  | 'Training of Employees'\n  | 'Use of Advanced Analytics'\n  | 'Implementation of Cybersecurity Measures'\n  | 'Automation of Processes'\n  | 'Integration of Systems'\n  | 'Adoption of Cloud Computing'\n  | 'Management of Customer Relationships'\n  | 'Establishment of Online Presence'\n  | 'Recovery from Disasters'\n  | 'Investment in Infrastructure'\n  | 'Adherence to Corporate Ethics'\n  | 'Promotion of Workplace Diversity'\n  | 'Governance of Data'\n  | 'Centricity towards Customers'\n  | 'Marketing through Digital Channels'\n  | 'Adoption of Advanced Manufacturing Techniques'\n  | 'Cross-selling and Up-selling Strategies'\n  | 'Adoption of Lean Management Practices'\n  | 'Continuity of the Business'\n  | 'Adoption of Renewable Energy Sources'\n  | 'Management of Talent'\n  | 'Use of Blockchain Technology'\n  | 'Use of Virtual and Augmented Reality Technologies'\n  | 'Management of Knowledge'\n  | 'Adoption of Internet of Things Technologies'\n  | 'Security of Information'\n  | 'Proactive Corporate Social Responsibility Initiatives'\n  | 'Assessment of Risks'\n  | 'Data-driven Decision Making'\n  | 'Management of Performance'\n  | 'Adoption of Green Practices'\n  | 'Management of Finances'\n  | 'Adoption of a Holistic Business Approach'\n  | 'Management of the Supply Chain'\n  | 'Use of Predictive Analytics'\n  | 'Service to Customers'\n  | 'Management of Quality'\n  | 'Formation of Strategic Alliances'\n  | 'Marketing across Multiple Channels'\n  | 'Backup and Recovery of Data'\n  | 'Promotion of Employee Wellness'\n  | 'Adoption of a Flexible Work Policy'\n  | 'Implementation of a CSR Program'\n  | 'Adoption of a Zero-waste Policy'\n  | 'Provision of Logistics Solutions'\n  | 'Acquisition of Talent'\n  | 'Adoption of a Mobile-first Approach'\n  | 'Engagement in E-commerce'\n  | 'Marketing through Content'\n  | 'Adoption of Remote Work'\n  | 'Use of CRM Software'\n  | 'Strategy for Cybersecurity'\n  | 'Promotion of a Continuous Learning Culture'\n  | 'Use of Automation Technologies'\n  | 'Strategy for Digital Transformation'\n  | 'Promotion of a Diversity and Inclusion Culture'\n  | 'Use of Business Intelligence Tools'\n  | 'Management of Change'\n  | 'Promotion of a Transparency Culture'\n  | 'Use of Project Management Tools'\n  | 'Management of Crises'\n  | 'Promotion of an Ethical Conduct Culture'\n  | 'Marketing through Social Media'\n  | 'Strategy for Data Governance'\n  | 'Promotion of a Customer Centricity Culture'\n  | 'Optimization for Search Engines'\n  | 'Strategy for Risk Management'\n  | 'Promotion of an Accountability Culture'\n  | 'Design of User Experiences'\n  | 'Other';\n\nexport type IdentificationMethod =\n  | 'Latest Funding Round Type or Series'\n  | 'Amount Raised in Latest Funding Round (USD)'\n  | 'Number of Acquisitions Made'\n  | 'Number of Hires Made'\n  | 'Job Postings Made by the Company'\n  | 'Announcements of New Products'\n  | 'Press Releases Issued'\n  | 'Announcements of New Partnerships'\n  | 'Investments in Research and Development'\n  | 'Filings of Patents'\n  | 'Openings of New Offices'\n  | 'Announcements of Entry into New Markets'\n  | 'Announcements of New Collaborations'\n  | 'Publications of Research'\n  | 'Announcements of Rebranding'\n  | 'Announcements of Initial Public Offerings'\n  | 'Announcements of Mergers'\n  | 'Announcements of Divestitures'\n  | 'Legal Documents Issued'\n  | 'Announcements of Corporate Social Responsibility Initiatives'\n  | 'Announcements of Digital Transformations'\n  | 'Reports on Sustainability'\n  | 'Announcements of Restructuring'\n  | 'Filings of Bankruptcy'\n  | 'Notices of Liquidation'\n  | 'Announcements of Joint Ventures'\n  | 'Opportunities for Franchising'\n  | 'Contracts for Outsourcing'\n  | 'Announcements of Insourcing'\n  | 'Announcements of Offshoring'\n  | 'Announcements of Reshoring'\n  | 'Announcements of Spin-Offs'\n  | 'Launches of New Products'\n  | 'Other';\n\nexport interface intentItem {\n  intent: Intent;\n  identificationMethod: IdentificationMethod;\n}\n\nexport interface report {\n  items: intentItem[];\n}",
+                    "fewshot": "/*\n * Copyright 2023 MagickML\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\nexport type Intent =\n  | 'Business Growth and Expansion'\n  | 'Product and Service Development'\n  | 'Partnerships and Collaborations'\n  | 'Investments and Financial Management'\n  | 'Legal and Regulatory Compliance'\n  | 'Customer Engagement and Market Presence'\n  | 'Quality and Supply Chain Management'\n  | 'Operational Efficiency and Cost Management'\n  | 'Employee Wellbeing and Talent Management'\n  | 'Technology Adoption and Digital Transformation'\n  | 'Corporate Governance and Risk Management'\n  | 'Sustainability and CSR Initiatives'\n  | 'Marketing Strategies'\n  | 'Data and Information Management'\n  | 'Other';\n\nexport type IdentificationMethod =\n  | 'Funding and Financial Information'\n  | 'Acquisitions and Hires'\n  | 'Company Announcements and Press Releases'\n  | 'Product and Service Developments'\n  | 'Partnerships and Collaborations'\n  | 'Research and Development Activities'\n  | 'Legal and Regulatory Documents'\n  | 'Corporate Social Responsibility and Sustainability Reports'\n  | 'Restructuring and Bankruptcy Filings'\n  | 'Business Operations and Strategies'\n  | 'Cybersecurity Measures'\n  | 'Other';\n\nexport interface intentItem {\n  intent: Intent;\n  identificationMethod: IdentificationMethod;\n}\n\nexport interface report {\n  items: [intentItem?, intentItem?, intentItem?];\n}\n",
                     "success": false,
                     "isPublic": false
                 },
@@ -400,7 +407,7 @@
                     "trigger": {
                         "connections": [
                             {
-                                "node": 233,
+                                "node": 499,
                                 "input": "trigger",
                                 "data": {
                                     "hello": "hello"
@@ -411,7 +418,110 @@
                     "output": {
                         "connections": [
                             {
-                                "node": 233,
+                                "node": 499,
+                                "input": "Detected Intent",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "position": [
+                    320,
+                    -32
+                ],
+                "name": "Object To JSON"
+            },
+            "499": {
+                "id": 499,
+                "data": {
+                    "inputs": [
+                        {
+                            "name": "Prompt",
+                            "taskType": "output",
+                            "socketKey": "Prompt",
+                            "connectionType": "input",
+                            "socketType": "anySocket"
+                        },
+                        {
+                            "name": "Detected Intent",
+                            "taskType": "output",
+                            "socketKey": "Detected Intent",
+                            "connectionType": "input",
+                            "socketType": "anySocket"
+                        },
+                        {
+                            "name": "Input",
+                            "taskType": "output",
+                            "socketKey": "Input",
+                            "connectionType": "input",
+                            "socketType": "anySocket"
+                        }
+                    ]
+                },
+                "inputs": {
+                    "trigger": {
+                        "connections": [
+                            {
+                                "node": 498,
+                                "output": "trigger",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    },
+                    "Input": {
+                        "connections": [
+                            {
+                                "node": 494,
+                                "output": "content",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    },
+                    "Detected Intent": {
+                        "connections": [
+                            {
+                                "node": 498,
+                                "output": "output",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    },
+                    "Prompt": {
+                        "connections": [
+                            {
+                                "node": 502,
+                                "output": "output",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "outputs": {
+                    "trigger": {
+                        "connections": [
+                            {
+                                "node": 500,
+                                "input": "trigger",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    },
+                    "output": {
+                        "connections": [
+                            {
+                                "node": 500,
                                 "input": "input",
                                 "data": {
                                     "hello": "hello"
@@ -421,10 +531,150 @@
                     }
                 },
                 "position": [
-                    288,
-                    -16
+                    768,
+                    -32
                 ],
-                "name": "Object To JSON"
+                "name": "Combine Text"
+            },
+            "500": {
+                "id": 500,
+                "data": {
+                    "model": "gpt-4",
+                    "temperature": 0.5,
+                    "top_k": 50,
+                    "top_p": 1,
+                    "stopSequences": "",
+                    "error": false,
+                    "frequency_penalty": 0,
+                    "presence_penalty": 0
+                },
+                "inputs": {
+                    "trigger": {
+                        "connections": [
+                            {
+                                "node": 499,
+                                "output": "trigger",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    },
+                    "system": {
+                        "connections": [
+                            {
+                                "node": 501,
+                                "output": "output",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    },
+                    "conversation": {
+                        "connections": []
+                    },
+                    "input": {
+                        "connections": [
+                            {
+                                "node": 499,
+                                "output": "output",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    },
+                    "function": {
+                        "connections": []
+                    }
+                },
+                "outputs": {
+                    "trigger": {
+                        "connections": [
+                            {
+                                "node": 233,
+                                "input": "trigger",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    },
+                    "result": {
+                        "connections": [
+                            {
+                                "node": 233,
+                                "input": "input",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    },
+                    "error": {
+                        "connections": []
+                    }
+                },
+                "position": [
+                    1200,
+                    -32
+                ],
+                "name": "Generate Text"
+            },
+            "501": {
+                "id": 501,
+                "data": {
+                    "fewshot": "Minerva is an innovative system designed to facilitate investment decisions. It aligns with report interest lines by utilizing specific document types submitted by the user.\n\nBy leveraging a comprehensive knowledge base and real-time data analysis, Minerva provides insightful advice to assist investors in their decision-making process. You can submit reports about an organization and Minerva will meticulously analyze them for Organization intent.\n\nFeel free to submit your documents for review. Minerva is capable of processing various document types, however, unrecognized ones may not be processed. Only the top three will be picked.\n\n---\n\n## Disclaimer\n\n> **Important:** Please be aware that this is a research preview and the system is currently under development. Therefore, users are strongly advised not to solely depend on the information provided.\n",
+                    "isPublic": true,
+                    "name": "System"
+                },
+                "inputs": {},
+                "outputs": {
+                    "output": {
+                        "connections": [
+                            {
+                                "node": 500,
+                                "input": "system",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "position": [
+                    752,
+                    176
+                ],
+                "name": "Text Variable"
+            },
+            "502": {
+                "id": 502,
+                "data": {
+                    "fewshot": "Complete the report integrating the detected intents.",
+                    "isPublic": true,
+                    "name": "Prompt"
+                },
+                "inputs": {},
+                "outputs": {
+                    "output": {
+                        "connections": [
+                            {
+                                "node": 499,
+                                "input": "Prompt",
+                                "data": {
+                                    "hello": "hello"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "position": [
+                    368,
+                    160
+                ],
+                "name": "Text Variable"
             }
         },
         "comments": []
