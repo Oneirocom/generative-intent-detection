@@ -26,70 +26,6 @@ sequenceDiagram
     Parsing-->>User: Returns Result (requires no extra data)
 ```
 
-## Find uuid
-
-ORGANIZATION_QUERY = "Google"
-API_KEY = "1234567890ABCDEF"
-
-curl -X 'GET' \
-  'https://api.crunchbase.com/api/v4/autocompletes?query=${ORGANIZATION_QUERY}' \
-  -H 'accept: application/json' \
-  -H 'X-cb-user-key: API_KEY'
-
-## Crunchbase fields
-
-"Crunchbase Fields","Field Type","Required"
-"Acquired By","string",""
-"Acquired Date","date",""
-"Acquired Price","currency (USD)",""
-"All Investors","long text area (value separated by ;)",""
-"City","string",""
-"Closed Date","date",""
-"Company Name","string",""
-"Country","string",""
-"Crunchbase Categories","multi-select picklists","YES"
-"Crunchbase Rank","integer","YES"
-"Crunchbase Rank Movement (last 7 days)","numeric",""
-"Crunchbase Rank Movement (last 30 days)","numeric","YES"
-"Crunchbase Rank Movement (last 90 days)","numeric",""
-"Crunchbase URL","url","YES"
-"Diversity Spotlight","long text area (value separated by ;)",""
-"Founded Date","date",""
-"Full Description","text area",""
-"IPO Date","date",""
-"Latest Acquired Company","string",""
-"Latest Acquisition Date","date",""
-"Latest Acquisition Price","currency (USD)",""
-"Latest Investment - Amount Invested (USD)","currency (USD)",""
-"Latest Investment - Company","string",""
-"Latest Investment - Date","date",""
-"Latest Round - Date","date","YES"
-"Latest Round - Funding Type / Series","picklist","YES"
-"Latest Round - Money Raised (USD)","currency (USD)","YES"
-"Legal Name","string",""
-"Number of Acquisitions (#)","integer",""
-"Number of Employees","picklist","YES"
-"Number of Founders","integer",""
-"Number of Funding Rounds (#)","integer",""
-"Number of Investments (#)","integer",""
-"Number of Investors (#)","integer",""
-"Organization Status","string",""
-"Postal Code","string",""
-"Profile Image URL","url",""
-"Region","string",""
-"Revenue Range (USD)","picklist","YES"
-"Short Description","string",""
-"Stock Exchange","string",""
-"Stock Symbol","string",""
-"Street","string",""
-"Total Funding (USD)","currency (USD)","YES"
-"Total Money Invested (USD)","currency (USD)",""
-"Website","url",""
-
-## Fetch api
-
-https://api.crunchbase.com/api/v4/entities/organizations/google?card_ids=%5B%22acquiree_acquisitions%22%2C%22acquirer_acquisitions%22%2C%22child_organizations%22%2C%22child_ownerships%22%2C%22event_appearances%22%2C%22fields%22%2C%22founders%22%2C%22headquarters_address%22%2C%22investors%22%2C%22ipos%22%2C%22jobs%22%2C%22key_employee_changes%22%2C%22layoffs%22%2C%22parent_organization%22%2C%22parent_ownership%22%2C%22participated_funding_rounds%22%2C%22participated_funds%22%2C%22participated_investments%22%2C%22press_references%22%2C%22raised_funding_rounds%22%2C%22raised_funds%22%2C%22raised_investments%22%5D
-
 ## API
 
 const axios = require('axios');
@@ -150,8 +86,21 @@ Feel free to submit your documents for review. Minerva is capable of processing 
 
 ## Document
 
-You: Top lawyer at Fox Corp. to step down after overseeing $787M settlement in Dominion defamation case The chief legal officer at Fox Corp. who oversaw a $787 million settlement with Dominion Voting Systems over defamation allegations against Fox News is leaving the company ByThe Associated Press August 11, 2023, 3:27 PM Fox Lawyer Stepping Down In this image provided by Fox Corp., Viet Dinh, the chief legal officer at the company, poses for a photo. On Friday, Aug. 11, 2023, Fox Corp. said that Dinh, who oversaw a $787 million settlement with Dominion Voting Systems over defamation allegations... The Associated Press NEW YORK -- Fox Corp. said Friday that its chief legal officer who oversaw a $787 million settlement with Dominion Voting Systems over defamation allegations is leaving the company. Viet Dinh, Fox's chief legal and policy officer, will step down effective Dec. 31, the New York-based company said in a statement. He will remain a “special advisor” to Fox Corp., it added. Fox News, a unit of Fox Corp., agreed to settle the case brought by the voting machine producer in mid-April following weeks of pretrial disclosures that revealed the network had aired false claims about the 2020 U.S. presidential election, even though many within the company knew they were not true. The company did not say why Dinh was leaving Fox Corp. Brian Nick, a spokesman for Fox, said the company had no comment beyond the statement.
-Agent: {"items":[{"intent":"Legal and Regulatory Compliance","identificationMethod":"Company Announcements and Press Releases"},{"intent":"Legal and Regulatory Compliance","identificationMethod":"Company Announcements and Press Releases"},{"intent":"Legal and Regulatory Compliance","identificationMethod":"Company Announcements and Press Releases"}]}
+```
+As generative AI continues to sweep an increasingly digital, hyperconnected world, NVIDIA founder and CEO Jensen Huang made a thunderous return to SIGGRAPH, the world’s premier computer graphics conference.
+
+“The generative AI era is upon us, the iPhone moment if you will,” Huang told an audience of thousands Tuesday during an in-person special address in Los Angeles.
+
+News highlights include the next-generation GH200 Grace Hopper Superchip platform, NVIDIA AI Workbench — a new unified toolkit that introduces simplified model tuning and deployment on NVIDIA AI platforms — and a major upgrade to NVIDIA Omniverse with generative AI and OpenUSD.
+
+The announcements are about bringing all of the past decade’s innovations — AI, virtual worlds, acceleration, simulation, collaboration and more — together.
+
+“Graphics and artificial intelligence are inseparable, graphics needs AI, and AI needs graphics,” Huang said, explaining that AI will learn skills in virtual worlds, and that AI will help create virtual worlds.
+```
+
+## Intent detection
+
+Examples
 
 ## Prompt
 
