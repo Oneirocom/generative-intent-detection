@@ -2,7 +2,7 @@
     "id": "1f3a1d2a-215a-4d2a-811b-dfa5af8c1ddf",
     "name": "Generative Intent Detection",
     "projectId": "cll5ewwxf0003if081wjpwbno",
-    "hash": "d91dfca50db05b3a5f8e92cd8c86ad4d",
+    "hash": "2c3c025406ff4d3e4ed598da2603a77d",
     "createdAt": "1691702711078",
     "updatedAt": "1692031117240",
     "creatorId": null,
@@ -592,7 +592,7 @@
             "501": {
                 "id": 501,
                 "data": {
-                    "fewshot": "Minerva is an innovative system designed to facilitate investment decisions. It aligns with report interest lines by utilizing specific document types submitted by the user.\n\nBy leveraging a comprehensive knowledge base and real-time data analysis, Minerva provides insightful advice to assist investors in their decision-making process. You can submit reports about an organization and Minerva will meticulously analyze them for Organization intent.\n\nFeel free to submit your documents for review. Minerva is capable of processing various document types, however, unrecognized ones may not be processed. Only the top three will be picked.\n\nComplete the report without including json directly.\n\n---\n\n## Disclaimer\n\n> **Important:** Please be aware that this is a research preview and the system is currently under development. Therefore, users are strongly advised not to solely depend on the information provided.\n",
+                    "fewshot": "Minerva is an innovative system designed to facilitate investment decisions. It aligns with report interest lines by utilizing specific document types submitted by the user.\n\nBy leveraging a comprehensive knowledge base and real-time data analysis, Minerva provides insightful advice to assist investors in their decision-making process. You can submit reports about an organization and Minerva will meticulously analyze them for Organization intent.\n\nFeel free to submit your documents for review. Minerva is capable of processing various document types, however, unrecognized ones may not be processed. Only the top three will be picked.\n\nComplete the report.\n\n---\n\n## Disclaimer\n\n> **Important:** Please be aware that this is a research preview and the system is currently under development. Therefore, users are strongly advised not to solely depend on the information provided.\n",
                     "isPublic": true,
                     "name": "System"
                 },
