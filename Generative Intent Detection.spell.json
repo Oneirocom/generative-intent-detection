@@ -2,7 +2,7 @@
     "id": "1f3a1d2a-215a-4d2a-811b-dfa5af8c1ddf",
     "name": "Generative Intent Detection",
     "projectId": "cll5ewwxf0003if081wjpwbno",
-    "hash": "7f5fcbbec6e823874e7826b6326bdc84",
+    "hash": "d91dfca50db05b3a5f8e92cd8c86ad4d",
     "createdAt": "1691702711078",
     "updatedAt": "1692031117240",
     "creatorId": null,
@@ -182,13 +182,6 @@
                             {
                                 "node": 495,
                                 "input": "input",
-                                "data": {
-                                    "hello": "hello"
-                                }
-                            },
-                            {
-                                "node": 499,
-                                "input": "Input",
                                 "data": {
                                     "hello": "hello"
                                 }
@@ -450,13 +443,6 @@
                             "socketKey": "Detected Intent",
                             "connectionType": "input",
                             "socketType": "anySocket"
-                        },
-                        {
-                            "name": "Input",
-                            "taskType": "output",
-                            "socketKey": "Input",
-                            "connectionType": "input",
-                            "socketType": "anySocket"
                         }
                     ]
                 },
@@ -466,17 +452,6 @@
                             {
                                 "node": 498,
                                 "output": "trigger",
-                                "data": {
-                                    "hello": "hello"
-                                }
-                            }
-                        ]
-                    },
-                    "Input": {
-                        "connections": [
-                            {
-                                "node": 494,
-                                "output": "content",
                                 "data": {
                                     "hello": "hello"
                                 }
@@ -495,15 +470,7 @@
                         ]
                     },
                     "Prompt": {
-                        "connections": [
-                            {
-                                "node": 502,
-                                "output": "output",
-                                "data": {
-                                    "hello": "hello"
-                                }
-                            }
-                        ]
+                        "connections": []
                     }
                 },
                 "outputs": {
@@ -625,7 +592,7 @@
             "501": {
                 "id": 501,
                 "data": {
-                    "fewshot": "Minerva is an innovative system designed to facilitate investment decisions. It aligns with report interest lines by utilizing specific document types submitted by the user.\n\nBy leveraging a comprehensive knowledge base and real-time data analysis, Minerva provides insightful advice to assist investors in their decision-making process. You can submit reports about an organization and Minerva will meticulously analyze them for Organization intent.\n\nFeel free to submit your documents for review. Minerva is capable of processing various document types, however, unrecognized ones may not be processed. Only the top three will be picked.\n\n---\n\n## Disclaimer\n\n> **Important:** Please be aware that this is a research preview and the system is currently under development. Therefore, users are strongly advised not to solely depend on the information provided.\n",
+                    "fewshot": "Minerva is an innovative system designed to facilitate investment decisions. It aligns with report interest lines by utilizing specific document types submitted by the user.\n\nBy leveraging a comprehensive knowledge base and real-time data analysis, Minerva provides insightful advice to assist investors in their decision-making process. You can submit reports about an organization and Minerva will meticulously analyze them for Organization intent.\n\nFeel free to submit your documents for review. Minerva is capable of processing various document types, however, unrecognized ones may not be processed. Only the top three will be picked.\n\nComplete the report without including json directly.\n\n---\n\n## Disclaimer\n\n> **Important:** Please be aware that this is a research preview and the system is currently under development. Therefore, users are strongly advised not to solely depend on the information provided.\n",
                     "isPublic": true,
                     "name": "System"
                 },
@@ -646,33 +613,6 @@
                 "position": [
                     752,
                     176
-                ],
-                "name": "Text Variable"
-            },
-            "502": {
-                "id": 502,
-                "data": {
-                    "fewshot": "Complete the report without repeating the detected intents.",
-                    "isPublic": true,
-                    "name": "Prompt"
-                },
-                "inputs": {},
-                "outputs": {
-                    "output": {
-                        "connections": [
-                            {
-                                "node": 499,
-                                "input": "Prompt",
-                                "data": {
-                                    "hello": "hello"
-                                }
-                            }
-                        ]
-                    }
-                },
-                "position": [
-                    368,
-                    160
                 ],
                 "name": "Text Variable"
             }
