@@ -1,22 +1,35 @@
 # README
 
-## How it Works
+## Overview
+
+This document provides a detailed explanation of the system workflow. The process involves three main steps:
 
 1. **User Inputs**: The user inputs the document into the TypeChat Model.
-2. **Processing**: The TypeChat Model processes the input and returns the results to the User.
-3. **Intent Matching**: The user initiates the Intent Matching Process with these results.
-4. **Final Result**: The Intent Matching Process returns the final result to the User, requiring no extra data.
+2. **Weak Intent Matching**: The TypeChat Model processes the input and initiates the Intent Matching Process with a weak model, returning a matched intent.
+3. **Strong Generative Model Processing**: The original prompt, system directive, and generated intent are then processed by a strong generative model.
+4. **Final Result**: The User receives the final result.
 
-This diagram shows the flow of data and processes in the system. It starts with the user inputting data into the TypeChat Model. This component then processes the data and return the results to the user. The user then initiates the Intent Matching Process with these results, which finally returns the final result back to the user.
+## Detailed Workflow
+
+The following sequence diagram illustrates the flow of data and processes in the system:
 
 ```mermaid
 sequenceDiagram
     participant User as User
     participant TC as TypeChat Model
-    participant IM as Intent Matching Process
+    participant WM as Weak Model
+    participant GM as Generative Model
 
     User->>TC: Input Document
-    TC-->>User: Processes Document
-    User->>IM: Initiate Intent Matching Process
-    IM-->>User: Returns Result (requires no extra data)
+    TC->>WM: Processes Document and Initiates Intent Matching
+    WM-->>TC: Returns Matched Intent
+    TC->>GM: Sends Original Prompt, System Directive, and Generated Intent
+    GM-->>User: Returns Final Result
 ```
+
+In this workflow:
+
+- The process begins with the user inputting data into the TypeChat Model.
+- The TypeChat Model then processes the data and initiates the Intent Matching Process with a weak model, returning a matched intent.
+- The original prompt, system directive, and generated intent are then processed by a strong generative model.
+- Finally, the user receives the final result.
