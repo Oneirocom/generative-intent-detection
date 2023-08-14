@@ -21,7 +21,7 @@ The announcements are about bringing all of the past decade’s innovations — 
 
 ## Prompt
 
-Complete the report. Do not repeat the raw data.
+Complete the report without repeating the detected intents.
 
 ```
 As generative AI continues to sweep an increasingly digital, hyperconnected world, NVIDIA founder and CEO Jensen Huang made a thunderous return to SIGGRAPH, the world’s premier computer graphics conference.
